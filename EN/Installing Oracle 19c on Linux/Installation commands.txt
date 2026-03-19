@@ -1,0 +1,50 @@
+#edit hosts file
+vi /etc/hosts
+
+#preinstalling oracle database
+#dnf install -y oracle-database-preinstall-19c
+
+#creating directories
+mkdir -p /u01/app/oracle/product/19c/dbhome_1
+mkdir -p /u02/oradata
+
+#giving permissions
+chown -R oracle:oinstall /u01 /u02
+chmod -R 775 /u01 /u02
+
+#stopping firewall
+systemctl stop firewalld
+systemctl disable firewalld 
+
+#changing oracle password
+passwd oracle
+
+#script setEvn.sh
+cat > /home/oracle/scripts/setEnv.sh <<EOF
+# Oracle Settings
+export TMP=/tmp
+export TMPDIR=\$TMP
+
+export ORACLE_HOSTNAME=miguel.com
+export ORACLE_UNQNAME=cdb1
+export ORACLE_BASE=/u01/app/oracle
+export ORACLE_HOME=\$ORACLE_BASE/product/19c/dbhome_1
+export ORA_INVENTORY=/u01/app/oraInventory
+export ORACLE_SID=cdb1
+export PDB_NAME=pdb1
+export DATA_DIR=/u02/oradata
+
+export PATH=/usr/sbin:/usr/local/bin:\$PATH
+export PATH=\$ORACLE_HOME/bin:\$PATH
+
+export LD_LIBRARY_PATH=\$ORACLE_HOME/lib:/lib:/usr/lib
+export CLASSPATH=\$ORACLE_HOME/jlib:\$ORACLE_HOME/rdbms/jlib
+EOF
+
+#adding script to the bash_profile
+echo ". /home/oracle/scripts/setEnv.sh" >> /home/oracle/.bash_profile
+
+#tricking installer
+export CV_ASSUME_DISTID=OEL7.6
+#running installer
+./runInstaller
