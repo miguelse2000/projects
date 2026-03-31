@@ -1,0 +1,382 @@
+
+
+Recovery Manager 23.6.0.24.10
+
+RMAN> list backup of controlfile;
+
+Lista de Juegos de Copias de Seguridad
+===================
+
+
+Clave BS  Tipo LV Tamaño       Tipo de Dispositivo Tiempo Transcurrido Hora de Finalización
+------- ---- -- ---------- ----------- ------------ --------------------
+59      Full    18.05M     DISK        00:00:00     25/03/26            
+        Clave BP: 59   Estado: AVAILABLE  Comprimido: NO  Etiqueta: TAG20260325T172631
+        Nombre de Parte: C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\AUTOBACKUP\2026_03_25\O1_MF_N_1228843591_NW835QMS_.BKP
+  Archivo de Control Incluido: SCN de Punto de Control: 34503088     Hora de Punto de Control: 25/03/26
+
+
+RMAN> list backup of database;
+
+Lista de Juegos de Copias de Seguridad
+===================
+
+
+Clave BS  Tipo LV Tamaño       Tipo de Dispositivo Tiempo Transcurrido Hora de Finalización
+------- ---- -- ---------- ----------- ------------ --------------------
+52      Full    1.65G      DISK        00:00:10     25/03/26            
+        Clave BP: 52   Estado: AVAILABLE  Comprimido: NO  Etiqueta: TAG20260325T172522
+        Nombre de Parte: C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW833LJH_.BKP
+  Lista de Archivos de Datos en el juego de copias de seguridad 52
+  File LV Type Ckp SCN    Hora de Punto de Control Abs Fuz SCN Sparse Name
+  ---- -- ---- ---------- ------------------------ ----------- ------ ----
+  1       Full 34503031   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\SYSTEM01.DBF
+  3       Full 34503031   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\SYSAUX01.DBF
+  7       Full 34503031   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\USERS01.DBF
+  11      Full 34503031   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\UNDOTBS01.DBF
+  30      Full 34503031   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\UNDOTBS02.DBF
+
+Clave BS  Tipo LV Tamaño       Tipo de Dispositivo Tiempo Transcurrido Hora de Finalización
+------- ---- -- ---------- ----------- ------------ --------------------
+53      Full    904.13M    DISK        00:00:07     25/03/26            
+        Clave BP: 53   Estado: AVAILABLE  Comprimido: NO  Etiqueta: TAG20260325T172522
+        Nombre de Parte: C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\20EE365E407B4D04895C246AA116763A\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW8341V6_.BKP
+  Lista de Archivos de Datos en el juego de copias de seguridad 53
+  ID de Contenedor: 3, Nombre de PDB: FREEPDB1
+  File LV Type Ckp SCN    Hora de Punto de Control Abs Fuz SCN Sparse Name
+  ---- -- ---- ---------- ------------------------ ----------- ------ ----
+  12      Full 34503037   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\SYSTEM01.DBF
+  13      Full 34503037   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\SYSAUX01.DBF
+  14      Full 34503037   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\UNDOTBS01.DBF
+  15      Full 34503037   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\USERS01.DBF
+  26      Full 34503037   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\TS_UNDO01.DBF
+  27      Full 34503037   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\OMF\FREE\20EE365E407B4D04895C246AA116763A\DATAFILE\O1_MF_TS_CLIEN_NP75QKMO_.DBF
+  28      Full 34503037   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\OMF\FREE\20EE365E407B4D04895C246AA116763A\DATAFILE\O1_MF_TS_UNDO__NP75SX0V_.DBF
+  29      Full 34503037   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\OMF\TS_EMPLEADOS01.DBF
+
+Clave BS  Tipo LV Tamaño       Tipo de Dispositivo Tiempo Transcurrido Hora de Finalización
+------- ---- -- ---------- ----------- ------------ --------------------
+54      Full    838.99M    DISK        00:00:09     25/03/26            
+        Clave BP: 54   Estado: AVAILABLE  Comprimido: NO  Etiqueta: TAG20260325T172522
+        Nombre de Parte: C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\A2EDF66EA2724525867CAF3717AAE003\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW834K2W_.BKP
+  Lista de Archivos de Datos en el juego de copias de seguridad 54
+  ID de Contenedor: 4, Nombre de PDB: FREEPDB10
+  File LV Type Ckp SCN    Hora de Punto de Control Abs Fuz SCN Sparse Name
+  ---- -- ---- ---------- ------------------------ ----------- ------ ----
+  16      Full 34503048   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\SYSTEM01.DBF
+  17      Full 34503048   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\SYSAUX01.DBF
+  18      Full 34503048   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\UNDOTBS01.DBF
+  19      Full 34503048   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\USERS01.DBF
+  20      Full 34503048   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\FREE\A2EDF66EA2724525867CAF3717AAE003\DATAFILE\O1_MF_T1_NMO1ONM8_.DBF
+  23      Full 6378914    15/12/25                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\T4_01.DBF
+  24      Full 34503048   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\FREE\A2EDF66EA2724525867CAF3717AAE003\DATAFILE\O1_MF_TS1_NN26BKQC_.DBF
+  46      Full 34503048   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\FREEPDB10ALERT.DBF
+
+Clave BS  Tipo LV Tamaño       Tipo de Dispositivo Tiempo Transcurrido Hora de Finalización
+------- ---- -- ---------- ----------- ------------ --------------------
+55      Full    727.20M    DISK        00:00:05     25/03/26            
+        Clave BP: 55   Estado: AVAILABLE  Comprimido: NO  Etiqueta: TAG20260325T172522
+        Nombre de Parte: C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\940EBD869C1F4B9EAEEA149FA35128D8\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW835095_.BKP
+  Lista de Archivos de Datos en el juego de copias de seguridad 55
+  ID de Contenedor: 8, Nombre de PDB: PDB_NEBULA
+  File LV Type Ckp SCN    Hora de Punto de Control Abs Fuz SCN Sparse Name
+  ---- -- ---- ---------- ------------------------ ----------- ------ ----
+  47      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSTEM01.DBF
+  48      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSAUX01.DBF
+  49      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\UNDOTBS01.DBF
+  50      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\USERS01.DBF
+
+Clave BS  Tipo LV Tamaño       Tipo de Dispositivo Tiempo Transcurrido Hora de Finalización
+------- ---- -- ---------- ----------- ------------ --------------------
+56      Full    606.84M    DISK        00:00:05     25/03/26            
+        Clave BP: 56   Estado: AVAILABLE  Comprimido: NO  Etiqueta: TAG20260325T172522
+        Nombre de Parte: C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\52BB6FC384AC4116A741873F9239AFDA\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW8357JQ_.BKP
+  Lista de Archivos de Datos en el juego de copias de seguridad 56
+  ID de Contenedor: 5, Nombre de PDB: PDBUNDO
+  File LV Type Ckp SCN    Hora de Punto de Control Abs Fuz SCN Sparse Name
+  ---- -- ---- ---------- ------------------------ ----------- ------ ----
+  31      Full 18915951   02/02/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBUNDO\SYSTEM01.DBF
+  32      Full 18915951   02/02/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBUNDO\SYSAUX01.DBF
+  33      Full 18915951   02/02/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBUNDO\UNDOTBS01.DBF
+  34      Full 18915951   02/02/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBUNDO\USERS01.DBF
+  35      Full 18915951   02/02/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBUNDO\UNDOTBS_K01.DBF
+
+Clave BS  Tipo LV Tamaño       Tipo de Dispositivo Tiempo Transcurrido Hora de Finalización
+------- ---- -- ---------- ----------- ------------ --------------------
+57      Full    546.27M    DISK        00:00:04     25/03/26            
+        Clave BP: 57   Estado: AVAILABLE  Comprimido: NO  Etiqueta: TAG20260325T172522
+        Nombre de Parte: C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\4ECEFCDEC71B4133904887F270B9F56E\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW835GQP_.BKP
+  Lista de Archivos de Datos en el juego de copias de seguridad 57
+  ID de Contenedor: 2, Nombre de PDB: PDB$SEED
+  File LV Type Ckp SCN    Hora de Punto de Control Abs Fuz SCN Sparse Name
+  ---- -- ---- ---------- ------------------------ ----------- ------ ----
+  2       Full 18113298   27/01/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBSEED\SYSTEM01.DBF
+  4       Full 18113298   27/01/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBSEED\SYSAUX01.DBF
+  9       Full 18113298   27/01/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBSEED\UNDOTBS01.DBF
+
+RMAN> backup spfile;
+Empezando backup a las 27/03/26
+usando el canal ORA_DISK_1
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: fallo del comando backup en 03/27/2026 13:19:03
+RMAN-06062: no se puede realizar una copia de seguridad de SPFILE ya que no se ha iniciado la instancia con SPFILE
+
+RMAN> RUN
+2> {
+3> SHUTDOWN IMMEDIATE;
+4> STARTUP MOUNT;
+5> RESTORE DATABASE;
+6> RECOVER DATABASE;
+7> ALTER DATABASE OPEN;
+8> }
+base de datos cerrada
+base de datos desmontada
+instancia Oracle cerrada
+
+conectado a la base de datos destino (no iniciada)
+instancia Oracle iniciada
+base de datos montada
+
+Total del Área Global del Sistema    1603983088 bytes
+
+Fixed Size                     5617392 bytes
+Variable Size               1023410176 bytes
+Database Buffers             570425344 bytes
+Redo Buffers                   4530176 bytes
+
+Empezando restore a las 27/03/26
+canal asignado: ORA_DISK_1
+canal ORA_DISK_1: SID=179 tipo de dispositivo=DISK
+
+no se ha procesado el archivo de datos 23 ya que es un archivo offline
+omitiendo archivo de datos 2; ya se ha restaurado en el archivo C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBSEED\SYSTEM01.DBF
+omitiendo archivo de datos 4; ya se ha restaurado en el archivo C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBSEED\SYSAUX01.DBF
+omitiendo archivo de datos 9; ya se ha restaurado en el archivo C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBSEED\UNDOTBS01.DBF
+omitiendo archivo de datos 31; ya se ha restaurado en el archivo C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBUNDO\SYSTEM01.DBF
+omitiendo archivo de datos 32; ya se ha restaurado en el archivo C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBUNDO\SYSAUX01.DBF
+omitiendo archivo de datos 33; ya se ha restaurado en el archivo C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBUNDO\UNDOTBS01.DBF
+omitiendo archivo de datos 34; ya se ha restaurado en el archivo C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBUNDO\USERS01.DBF
+omitiendo archivo de datos 35; ya se ha restaurado en el archivo C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDBUNDO\UNDOTBS_K01.DBF
+canal ORA_DISK_1: iniciando restauración del juego de copias de seguridad de archivos de datos
+canal ORA_DISK_1: especificando archivo(s) de datos para restaurar del juego de copias de seguridad
+canal ORA_DISK_1: restaurando el archivo de datos 00001 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\SYSTEM01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00003 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\SYSAUX01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00007 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\USERS01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00011 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\UNDOTBS01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00030 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\UNDOTBS02.DBF
+canal ORA_DISK_1: leyendo desde la parte de copia de seguridad C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW833LJH_.BKP
+canal ORA_DISK_1: manejador de parte=C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW833LJH_.BKP etiqueta=TAG20260325T172522
+canal ORA_DISK_1: parte 1 de la copia de seguridad restaurada
+canal ORA_DISK_1: restauración terminada, tiempo transcurrido: 00:00:15
+canal ORA_DISK_1: iniciando restauración del juego de copias de seguridad de archivos de datos
+canal ORA_DISK_1: especificando archivo(s) de datos para restaurar del juego de copias de seguridad
+canal ORA_DISK_1: restaurando el archivo de datos 00012 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\SYSTEM01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00013 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\SYSAUX01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00014 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\UNDOTBS01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00015 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\USERS01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00026 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\TS_UNDO01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00027 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\OMF\FREE\20EE365E407B4D04895C246AA116763A\DATAFILE\O1_MF_TS_CLIEN_NP75QKMO_.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00028 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\OMF\FREE\20EE365E407B4D04895C246AA116763A\DATAFILE\O1_MF_TS_UNDO__NP75SX0V_.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00029 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB1\OMF\TS_EMPLEADOS01.DBF
+canal ORA_DISK_1: leyendo desde la parte de copia de seguridad C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\20EE365E407B4D04895C246AA116763A\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW8341V6_.BKP
+canal ORA_DISK_1: manejador de parte=C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\20EE365E407B4D04895C246AA116763A\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW8341V6_.BKP etiqueta=TAG20260325T172522
+canal ORA_DISK_1: parte 1 de la copia de seguridad restaurada
+canal ORA_DISK_1: restauración terminada, tiempo transcurrido: 00:00:07
+canal ORA_DISK_1: iniciando restauración del juego de copias de seguridad de archivos de datos
+canal ORA_DISK_1: especificando archivo(s) de datos para restaurar del juego de copias de seguridad
+canal ORA_DISK_1: restaurando el archivo de datos 00016 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\SYSTEM01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00017 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\SYSAUX01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00018 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\UNDOTBS01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00019 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\USERS01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00020 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\FREE\A2EDF66EA2724525867CAF3717AAE003\DATAFILE\O1_MF_T1_NMO1ONM8_.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00024 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\FREE\A2EDF66EA2724525867CAF3717AAE003\DATAFILE\O1_MF_TS1_NN26BKQC_.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00046 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\FREEPDB10\FREEPDB10ALERT.DBF
+canal ORA_DISK_1: leyendo desde la parte de copia de seguridad C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\A2EDF66EA2724525867CAF3717AAE003\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW834K2W_.BKP
+canal ORA_DISK_1: manejador de parte=C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\A2EDF66EA2724525867CAF3717AAE003\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW834K2W_.BKP etiqueta=TAG20260325T172522
+canal ORA_DISK_1: parte 1 de la copia de seguridad restaurada
+canal ORA_DISK_1: restauración terminada, tiempo transcurrido: 00:00:07
+canal ORA_DISK_1: iniciando restauración del juego de copias de seguridad de archivos de datos
+canal ORA_DISK_1: especificando archivo(s) de datos para restaurar del juego de copias de seguridad
+canal ORA_DISK_1: restaurando el archivo de datos 00047 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSTEM01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00048 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSAUX01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00049 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\UNDOTBS01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00050 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\USERS01.DBF
+canal ORA_DISK_1: leyendo desde la parte de copia de seguridad C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\940EBD869C1F4B9EAEEA149FA35128D8\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW835095_.BKP
+canal ORA_DISK_1: manejador de parte=C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\940EBD869C1F4B9EAEEA149FA35128D8\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW835095_.BKP etiqueta=TAG20260325T172522
+canal ORA_DISK_1: parte 1 de la copia de seguridad restaurada
+canal ORA_DISK_1: restauración terminada, tiempo transcurrido: 00:00:07
+Se ha finalizado restore a las 27/03/26
+
+Empezando recover a las 27/03/26
+usando el canal ORA_DISK_1
+no se ha procesado el archivo de datos 23 ya que es un archivo offline
+
+iniciando la recuperación del medio físico
+recuperación del medio físico terminada, tiempo transcurrido: 00:00:03
+
+Se ha finalizado recover a las 27/03/26
+
+Sentencia procesada
+RMAN> list backup of database pdb_nebula;
+se utiliza el archivo de control de la base de datos destino en lugar del catálogo de recuperación
+
+Lista de Juegos de Copias de Seguridad
+===================
+
+
+Clave BS  Tipo LV Tamaño       Tipo de Dispositivo Tiempo Transcurrido Hora de Finalización
+------- ---- -- ---------- ----------- ------------ --------------------
+55      Full    727.20M    DISK        00:00:05     25/03/26            
+        Clave BP: 55   Estado: AVAILABLE  Comprimido: NO  Etiqueta: TAG20260325T172522
+        Nombre de Parte: C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\940EBD869C1F4B9EAEEA149FA35128D8\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW835095_.BKP
+  Lista de Archivos de Datos en el juego de copias de seguridad 55
+  ID de Contenedor: 8, Nombre de PDB: PDB_NEBULA
+  File LV Type Ckp SCN    Hora de Punto de Control Abs Fuz SCN Sparse Name
+  ---- -- ---- ---------- ------------------------ ----------- ------ ----
+  47      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSTEM01.DBF
+  48      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSAUX01.DBF
+  49      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\UNDOTBS01.DBF
+  50      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\USERS01.DBF
+
+
+RMAN> backup database pdb_nebula plus archivelog;
+
+Empezando backup a las 31/03/26
+log actual archivado
+canal asignado: ORA_DISK_1
+canal ORA_DISK_1: SID=197 tipo de dispositivo=DISK
+canal ORA_DISK_1: iniciando juego de copias de seguridad de archive log
+canal ORA_DISK_1: especificando archive log(s) en el juego de copias de seguridad
+thread de archive log de entrada=1 secuencia=83 RECID=91 STAMP=1228389231
+thread de archive log de entrada=1 secuencia=84 RECID=92 STAMP=1228471073
+thread de archive log de entrada=1 secuencia=85 RECID=93 STAMP=1228477358
+thread de archive log de entrada=1 secuencia=86 RECID=94 STAMP=1228488030
+thread de archive log de entrada=1 secuencia=87 RECID=95 STAMP=1228504983
+thread de archive log de entrada=1 secuencia=88 RECID=96 STAMP=1228507809
+thread de archive log de entrada=1 secuencia=89 RECID=97 STAMP=1228731997
+thread de archive log de entrada=1 secuencia=90 RECID=98 STAMP=1228818205
+thread de archive log de entrada=1 secuencia=91 RECID=99 STAMP=1228839831
+thread de archive log de entrada=1 secuencia=92 RECID=100 STAMP=1228842549
+thread de archive log de entrada=1 secuencia=93 RECID=101 STAMP=1228843514
+thread de archive log de entrada=1 secuencia=94 RECID=102 STAMP=1228843589
+thread de archive log de entrada=1 secuencia=95 RECID=103 STAMP=1229104262
+thread de archive log de entrada=1 secuencia=96 RECID=104 STAMP=1229104853
+thread de archive log de entrada=1 secuencia=97 RECID=105 STAMP=1229273821
+thread de archive log de entrada=1 secuencia=98 RECID=106 STAMP=1229342293
+thread de archive log de entrada=1 secuencia=99 RECID=107 STAMP=1229343916
+canal ORA_DISK_1: iniciando parte 1 en 31/03/26
+canal ORA_DISK_1: finalizando parte 1 en 31/03/26
+manejador de parte=C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\BACKUPSET\2026_03_31\O1_MF_ANNNN_TAG20260331T122516_NWQ88F45_.BKP etiqueta=TAG20260331T122516 comentario=NONE
+canal ORA_DISK_1: juego de copias de seguridad terminado, tiempo transcurrido: 00:00:15
+Se ha finalizado backup a las 31/03/26
+
+Empezando backup a las 31/03/26
+usando el canal ORA_DISK_1
+canal ORA_DISK_1: iniciando juego de copias de seguridad de archivo de datos completo
+canal ORA_DISK_1: especificando archivo(s) de datos en el juego de copias de seguridad
+número de archivo de datos de entrada=00048 nombre=C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSAUX01.DBF
+número de archivo de datos de entrada=00047 nombre=C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSTEM01.DBF
+número de archivo de datos de entrada=00049 nombre=C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\UNDOTBS01.DBF
+número de archivo de datos de entrada=00050 nombre=C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\USERS01.DBF
+canal ORA_DISK_1: iniciando parte 1 en 31/03/26
+canal ORA_DISK_1: finalizando parte 1 en 31/03/26
+manejador de parte=C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\940EBD869C1F4B9EAEEA149FA35128D8\BACKUPSET\2026_03_31\O1_MF_NNNDF_TAG20260331T122532_NWQ88X56_.BKP etiqueta=TAG20260331T122532 comentario=NONE
+canal ORA_DISK_1: juego de copias de seguridad terminado, tiempo transcurrido: 00:00:03
+Se ha finalizado backup a las 31/03/26
+
+Empezando backup a las 31/03/26
+log actual archivado
+usando el canal ORA_DISK_1
+canal ORA_DISK_1: iniciando juego de copias de seguridad de archive log
+canal ORA_DISK_1: especificando archive log(s) en el juego de copias de seguridad
+thread de archive log de entrada=1 secuencia=100 RECID=108 STAMP=1229343936
+canal ORA_DISK_1: iniciando parte 1 en 31/03/26
+canal ORA_DISK_1: finalizando parte 1 en 31/03/26
+manejador de parte=C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\BACKUPSET\2026_03_31\O1_MF_ANNNN_TAG20260331T122536_NWQ890MC_.BKP etiqueta=TAG20260331T122536 comentario=NONE
+canal ORA_DISK_1: juego de copias de seguridad terminado, tiempo transcurrido: 00:00:01
+Se ha finalizado backup a las 31/03/26
+
+Empezando Control File and SPFILE Autobackup a las 31/03/26
+manejador de parte=C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\AUTOBACKUP\2026_03_31\O1_MF_S_1229343937_NWQ8920D_.BKP comentario=NONE
+Se ha finalizado Control File and SPFILE Autobackup a las 31/03/26
+
+
+RMAN> list backup of database pdb_nebula;
+
+Lista de Juegos de Copias de Seguridad
+===================
+
+
+Clave BS  Tipo LV Tamaño       Tipo de Dispositivo Tiempo Transcurrido Hora de Finalización
+------- ---- -- ---------- ----------- ------------ --------------------
+55      Full    727.20M    DISK        00:00:05     25/03/26            
+        Clave BP: 55   Estado: AVAILABLE  Comprimido: NO  Etiqueta: TAG20260325T172522
+        Nombre de Parte: C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\940EBD869C1F4B9EAEEA149FA35128D8\BACKUPSET\2026_03_25\O1_MF_NNNDF_TAG20260325T172522_NW835095_.BKP
+  Lista de Archivos de Datos en el juego de copias de seguridad 55
+  ID de Contenedor: 8, Nombre de PDB: PDB_NEBULA
+  File LV Type Ckp SCN    Hora de Punto de Control Abs Fuz SCN Sparse Name
+  ---- -- ---- ---------- ------------------------ ----------- ------ ----
+  47      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSTEM01.DBF
+  48      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSAUX01.DBF
+  49      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\UNDOTBS01.DBF
+  50      Full 34503055   25/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\USERS01.DBF
+
+Clave BS  Tipo LV Tamaño       Tipo de Dispositivo Tiempo Transcurrido Hora de Finalización
+------- ---- -- ---------- ----------- ------------ --------------------
+61      Full    711.05M    DISK        00:00:02     31/03/26            
+        Clave BP: 61   Estado: AVAILABLE  Comprimido: NO  Etiqueta: TAG20260331T122532
+        Nombre de Parte: C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\940EBD869C1F4B9EAEEA149FA35128D8\BACKUPSET\2026_03_31\O1_MF_NNNDF_TAG20260331T122532_NWQ88X56_.BKP
+  Lista de Archivos de Datos en el juego de copias de seguridad 61
+  ID de Contenedor: 8, Nombre de PDB: PDB_NEBULA
+  File LV Type Ckp SCN    Hora de Punto de Control Abs Fuz SCN Sparse Name
+  ---- -- ---- ---------- ------------------------ ----------- ------ ----
+  47      Full 36745265   31/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSTEM01.DBF
+  48      Full 36745265   31/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSAUX01.DBF
+  49      Full 36745265   31/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\UNDOTBS01.DBF
+  50      Full 36745265   31/03/26                              NO    C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\USERS01.DBF
+
+RMAN> RUN
+2> {
+3> ALTER PLUGGABLE DATABASE pdb_nebula CLOSE;
+4> SET UNTIL TIME "TO_DATE('31-03-2026 19:14:36','DD-MM-YYYY HH24:MI:SS')";
+5> RESTORE PLUGGABLE DATABASE pdb_nebula;
+6> RECOVER PLUGGABLE DATABASE pdb_nebula;
+7> ALTER PLUGGABLE DATABASE pdb_nebula OPEN RESETLOGS;
+8> }
+Sentencia procesada
+
+ejecutando el comando: SET until clause (TIME)
+
+Empezando restore a las 31/03/26
+usando el canal ORA_DISK_1
+
+canal ORA_DISK_1: iniciando restauración del juego de copias de seguridad de archivos de datos
+canal ORA_DISK_1: especificando archivo(s) de datos para restaurar del juego de copias de seguridad
+canal ORA_DISK_1: restaurando el archivo de datos 00047 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSTEM01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00048 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\SYSAUX01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00049 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\UNDOTBS01.DBF
+canal ORA_DISK_1: restaurando el archivo de datos 00050 a C:\APP\SAUKY\PRODUCT\23AI\ORADATA\FREE\PDB_NEBULA\USERS01.DBF
+canal ORA_DISK_1: leyendo desde la parte de copia de seguridad C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\940EBD869C1F4B9EAEEA149FA35128D8\BACKUPSET\2026_03_31\O1_MF_NNNDF_TAG20260331T122532_NWQ88X56_.BKP
+canal ORA_DISK_1: manejador de parte=C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\940EBD869C1F4B9EAEEA149FA35128D8\BACKUPSET\2026_03_31\O1_MF_NNNDF_TAG20260331T122532_NWQ88X56_.BKP etiqueta=TAG20260331T122532
+canal ORA_DISK_1: parte 1 de la copia de seguridad restaurada
+canal ORA_DISK_1: restauración terminada, tiempo transcurrido: 00:00:07
+Se ha finalizado restore a las 31/03/26
+
+Empezando recover a las 31/03/26
+log actual archivado
+usando el canal ORA_DISK_1
+
+
+iniciando la recuperación del medio físico
+
+el thread de archive log 1, secuencia 100 ya está en el disco como archivo C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\ARCHIVELOG\2026_03_31\O1_MF_1_100_NWQ8906Z_.ARC
+el thread de archive log 1, secuencia 101 ya está en el disco como archivo C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\ARCHIVELOG\2026_03_31\O1_MF_1_101_NWQCKW6N_.ARC
+el thread de archive log 1, secuencia 102 ya está en el disco como archivo C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\ARCHIVELOG\2026_03_31\O1_MF_1_102_NWQDKCW0_.ARC
+el thread de archive log 1, secuencia 103 ya está en el disco como archivo C:\APP\SAUKY\PRODUCT\23AI\FAST_RECOVERY_AREA\FREE\ARCHIVELOG\2026_03_31\O1_MF_1_103_NWR0CQM0_.ARC
+recuperación del medio físico terminada, tiempo transcurrido: 00:00:01
+Se ha finalizado recover a las 31/03/26
+
+Sentencia procesada
+
